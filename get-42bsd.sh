@@ -14,7 +14,7 @@ echo '| based on https://gunkies.org/wiki/Installing_4.2_BSD_on_SIMH            
 echo '|                                                                            |'
 echo '| Tested on Ubuntu 20.04 amd64 - Debian based                                |'  
 echo '|                                                                            |'
-echo '| needs working gcc,curl,make,truncate and git                               |'
+echo '| Needs working gcc, curl, make, python2, truncate and git                   |'
 echo '|                                                                            |'
 echo '| To build simh/vax780 we also need the following on Debian/Ubuntu           |'  
 echo '| apt install libpcap-dev libpcre3-dev vde2 libsdl2-ttf-dev libsdl2-ttf-2.0-0|'
@@ -51,6 +51,10 @@ if ! [ -x "$(command -v truncate)" ]; then
   exit 1
 fi
 
+if ! [ -x "$(command -v python2)" ]; then
+  echo '[-] Error: python2 is not installed.' >&2
+  exit 1
+fi
 
 # Cleanup 
 rm -rf 4.2BSD-temp 
