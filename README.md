@@ -27,7 +27,7 @@ This is done via
 ```
   apt install uml-utilities bridge-utils 
 ```
-The networking sciprt (run this prior SIMH exution) is as follows 
+The networking sciprt (run this prior SIMH exution) is as follows.  
 Adjust according to your needs  
 ```
   #Setup tap and bridge 
