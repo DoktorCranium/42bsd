@@ -37,7 +37,7 @@ if ! [ -x "$(command -v curl)" ]; then
 fi
 
 if ! [ -x "$(command -v git)" ]; then
-  echo '[-] Error: curl is not installed.' >&2
+  echo '[-] Error: git is not installed.' >&2
   exit 1
 fi
 
