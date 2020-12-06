@@ -25,9 +25,9 @@ one has to do and is split into 4 stages
 To get networking going make sure you have the required tap and bridge 
 This is done via 
 ```
-  apt–get install uml-utilities bridge-utils 
+  apt install uml-utilities bridge-utils 
 ```
-The networking sciprt (run this prior SIMH exution) is as follows 
+The networking sciprt (run this prior SIMH exution) is as follows.  
 Adjust according to your needs  
 ```
   #Setup tap and bridge 
