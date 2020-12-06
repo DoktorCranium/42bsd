@@ -24,12 +24,12 @@ one has to do and is split into 4 stages
 
 To get networking going make sure you have the required tap and bridge 
 This is done via 
-
+```
   apt–get install uml-utilities bridge-utils 
-
+```
 The networking sciprt (run this prior SIMH exution) is as follows 
 Adjust according to your needs  
-
+```
   #Setup tap and bridge 
   tunctl -t tap0 -u user
   ifconfig tap0 up
@@ -40,5 +40,6 @@ Adjust according to your needs
   ifconfig tap0 0.0.0.0
   sysctl net.ipv4.ip_forward=1
   iptables --table nat -A POSTROUTING --out-interface wlan0 -j MASQUERADE
+  ```
 
 
