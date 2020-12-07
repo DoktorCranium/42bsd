@@ -30,7 +30,7 @@ This is done via
 The networking sciprt (run this prior SIMH exution) is as follows.  
 Adjust according to your needs  
 ```
-  #Setup tap and bridge 
+  #Setup tap and bridge - replace user with your username
   tunctl -t tap0 -u user
   ifconfig tap0 up
   brctl addbr br0
