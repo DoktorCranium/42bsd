@@ -156,8 +156,8 @@ Now lets create the network interface
 and we will connect to ARPANET :) 
 Adjust accordingly 
 
-# echo '10.0.2.100 bsd42' > /etc/hosts
-# echo 'home 10.0.2' > /etc/networks 
+# echo '10.0.2.100 bsd42' >> /etc/hosts
+# echo 'home 10.0.2' >> /etc/networks 
 # /bin/hostname bsd42
 # /etc/ifconfig de0 up
 # /etc/ifconfig de0 arp
